@@ -6,6 +6,9 @@
     version="2.4">
 
     <display-name>HelloWorld Application</display-name>
+    <welcome-file-list>
+        <welcome-file>/html/index.html</welcome-file>
+    </welcome-file-list>
      <servlet>
         <servlet-name>MainServlet</servlet-name>
         <servlet-class>Main</servlet-class>
