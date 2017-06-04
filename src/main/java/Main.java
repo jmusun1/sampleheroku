@@ -2,7 +2,7 @@ import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
 import java.nio.charset.Charset;
-import javax.servlet.RequestDispatcher
+import javax.servlet.RequestDispatcher;
 
 public class Main extends HttpServlet {
   @Override
