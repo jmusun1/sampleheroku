@@ -8,6 +8,10 @@ public class Main extends HttpServlet {
   protected void doGet(HttpServletRequest req, HttpServletResponse resp)
       throws ServletException, IOException {
     //resp.getWriter().print("Hello from Java! Charset: " + Charset.defaultCharset());
-    resp.sendRedirect("/html/index.html");
+    //resp.sendRedirect("/html/index.html");
+     RequestDispatcher view = req.getRequestDispatcher("/html/index.html");
+        // don't add your web-app name to the path
+
+        view.forward(req, resp);  
   }
 }
