@@ -11,14 +11,30 @@
         based on the recommendations of the Application Developer's Guide.
     </description>
 
-    <servlet>
+          <servlet>
         <servlet-name>MainServlet</servlet-name>
-        <servlet-class>Main</servlet-class>
+        <servlet-class>com.pge.Main</servlet-class>
     </servlet>
 
     <servlet-mapping>
         <servlet-name>MainServlet</servlet-name>
         <url-pattern>/*</url-pattern>
     </servlet-mapping>
+  <servlet>
+    <servlet-name>TheServlet</servlet-name>
+    <servlet-class>pge.servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TheServlet</servlet-name>
+    <url-pattern>/theservlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
 
 </web-app>
